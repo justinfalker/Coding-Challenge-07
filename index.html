@@ -7,6 +7,7 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 <header>
     <h1>Generic Coffee House</h1>
     <p>Latte | Espresso | Macchiato</p>
@@ -17,7 +18,7 @@
 <section>
     <h2>Welcome to Generic Coffee House!</h2>
     <p>We serve mediocre coffee and a relaxing place to enjoy your day.</p>
-    <h2>Come Visit Us Today!</h2>
+    <h2 id="cta">Come Visit Us Today!</h2>
 </section>
 
 <section>
@@ -33,8 +34,15 @@
 
     <div class="service">
         <h3>Seating and Ambiance</h3>
-        <p>A cozy place to relax, study, or hang out with friends</p>
+        <p>A cozy place to relax, study, or hang out with friends.</p>
     </div>
+</section>
+
+<section>
+    <h2>Headline Update</h2>
+
+    <input id="headlineInput" type="text" placeholder="Enter Headline">
+    <button id="Update">Update Headline</button>
 </section>
 
 </main>
@@ -43,6 +51,16 @@
     <p>Email: AverageCoffee@gmail.com</p>
     <p>Phone: 575-173-4597</p>
 </footer>
+
+<script src="cc_7.js"></script>
+
+<script>
+function updateHeadline() {
+    let newText = document.getElementById("headlineInput").value;
+
+    document.getElementById("cta").textContent = newText;
+}
+</script>
     
 </body>
 </html>
